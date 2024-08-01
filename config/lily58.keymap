@@ -13,6 +13,7 @@
 / {
     behaviors {
         td0: tap_dance_0 {
+            label ="CAPS";
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
