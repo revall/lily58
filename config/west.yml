@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/ftc/
     - name: cirque-input-module
-      url-base: https://github.com/petejohanson/cirque-input-module
+      url-base: https://github.com/petejohanson
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -11,7 +11,7 @@ manifest:
       remote: zmkfirmware
       revision: mouse-ftc
       import: app/west.yml
-    - name: cirque-input
+    - name: cirque-input-module
       remote: cirque-input-module
       revision: main
   self:
