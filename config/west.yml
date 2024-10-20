@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/petejohanson/zmk/tree/feat/
+      url-base: https://github.com/petejohanson
     - name: cirque-input-module
       url-base: https://github.com/petejohanson
     # Additional modules containing boards/shields/custom code can be listed here as well
@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: pointers-move-scroll
+      revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: cirque-input-module
       remote: cirque-input-module
