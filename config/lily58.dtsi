@@ -11,7 +11,7 @@
         //no-taps;
     };
 
-    glidepoint1: glidepoint@2a {
+    glidepoint1: glidepoint@2b {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "disabled";
