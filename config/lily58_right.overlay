@@ -1,4 +1,4 @@
-#include "splitkb_aurora_lily58.dtsi"
+#include "lily58.dtsi"
 
 / {
     /* THIS only makes keymap binding happy, nothing happens on peripheral side */
