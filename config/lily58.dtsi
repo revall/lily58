@@ -11,16 +11,6 @@
         //no-taps;
     };
 
-    glidepoint1: glidepoint@2b {
-        compatible = "cirque,pinnacle";
-        reg = <0x2a>;
-        status = "disabled";
-        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
-
-        sensitivity = "2x";
-        sleep;
-        //no-taps;
-    };
 };
 
 
@@ -29,7 +19,7 @@
 	/* &glidepoint0 on central, &glidepoint1 on peripheral */
     tpad_central_listener {
         compatible = "zmk,input-listener";
-        device = <&glidepoint0>;
+        device = <&glidepoint1>;
         //xy-swap;
         y-invert;
         //x-invert;
@@ -38,7 +28,7 @@
 
     tpad_peripheral_listener {
         compatible = "zmk,input-listener";
-        device = <&glidepoint1>;
+        device = <&glidepoin0>;
         //xy-swap;
         y-invert;
         //x-invert;
