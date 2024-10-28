@@ -2,7 +2,7 @@
 
 &i2c0 {
     status = "okay";
-    glidepoint1: glidepoint@2b {
+    glidepoint2: glidepoint@2b {
         status = "okay";
     };
 };
@@ -15,7 +15,7 @@
 
 / {
     /* THIS only makes keymap binding happy, nothing happens on peripheral side */
-	glidepoint0: virtual_input {
+	glidepoint3: virtual_input {
 		compatible = "zmk,virtual-input";
 	};
 
@@ -25,7 +25,7 @@
         /* peripheral side input device, used to... */
 		/*  - be intecepted on peripheral; */
 		/*  - and then, be resurrected as `zmk,virtual-device` on central; */
-        device = <&glidepoint1>;
+        device = <&glidepoint2>;
 
         /* channel id, used to be be transfered along with all input events. */
 		/* NOTE 1: pick any 8bit integer. (1 - 255) */
