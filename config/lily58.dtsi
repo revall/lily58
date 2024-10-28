@@ -32,6 +32,6 @@
         y-invert;
         //x-invert;
         scale-multiplier = <2>;
-    }
+    };
 
 };
