@@ -4,12 +4,16 @@
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "disabled";
-        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        dr-gpios = <&pro_micro 33 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "2x";
         sleep;
         //no-taps;
     };
 
+};
+
+&uart1 {
+    status = "disabled";
 };
 
 
