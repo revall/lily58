@@ -2,20 +2,29 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
   projects:
+    #- name: zmk
+    #  remote: zmkfirmware
+    #  revision: main
+    #  import: app/west.yml
     - name: zmk
       remote: badjeff
-      revision: feat/pointers-move-scroll
+      revision: feat/pointers-with-input-processors
       import: app/west.yml
-    - name: zmk-split-peripheral-input-relay
-      remote: badjeff
-      revision: main
+    ## Modules ##
     - name: cirque-input-module
       remote: badjeff
-      revision: main
+      revision: tweak
+    #- name: zmk-split-peripheral-input-relay
+    #  remote: badjeff
+    #  revision: main
+    #- name: zmk-input-behavior-listener
+    #  remote: badjeff
+    #  revision: main   
   self:
     path: config
+    
