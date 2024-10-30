@@ -22,9 +22,9 @@
         ;
 };
 
-&left_encoder {
-    status = "okay";
-};
+//&left_encoder {
+//    status = "okay";
+// };
 
 // Cirque Trackpad
 &i2c0 {
