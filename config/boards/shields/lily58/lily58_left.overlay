@@ -28,7 +28,7 @@
     status = "okay";   
     glidepoint0: glidepoint@2a {
         status = "okay";
-    };
+    };nk
 };
 
 // ZMK Input Split
@@ -38,4 +38,4 @@
 //    // to the central. Mostly useful for orientation fix ups.
 //    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
 //                      <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
-};nk
+};
