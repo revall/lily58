@@ -35,6 +35,6 @@
 };
 
 //// ZMK Input Split
-//&glidepoint_split {
-//    device = <&glidepoint0>;
-//};
+&glidepoint_split {
+    device = <&glidepoint0>;
+};
