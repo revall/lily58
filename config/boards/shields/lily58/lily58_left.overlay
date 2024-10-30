@@ -28,7 +28,7 @@
     status = "okay";   
     glidepoint0: glidepoint@2a {
         status = "okay";
-    };nk
+    };
 };
 
 // ZMK Input Split
