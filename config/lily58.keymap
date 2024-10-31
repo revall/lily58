@@ -24,7 +24,7 @@
 / {
     glidepoint_input_listener {
      compatible = "zmk,input-listener";
-     device = <&glidepoint_split>;
+     device = <&glidepoint0>;
         input-processors = <&zip_xy_scaler 3 2>;
         precise {
             layers = <LOWER>;
