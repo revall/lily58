@@ -31,6 +31,12 @@
     };
 };
 
+&i2c0_default {
+    group1 {
+      bias-pull-up;
+    };
+};
+
 // ZMK Input Split
 //&glidepoint_split {
 //    device = <&glidepoint0>;
