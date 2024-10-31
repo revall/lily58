@@ -22,10 +22,6 @@
         ;
 };
 
-//&right_encoder {
-//    status = "okay";
-//};
-
 // Cirque Trackpad
 &i2c0 {
     status = "okay";   
@@ -34,7 +30,7 @@
     };
 };
 
-//// ZMK Input Split
+// ZMK Input Split
 &glidepoint_split {
     device = <&glidepoint0>;
 };
