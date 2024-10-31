@@ -9,8 +9,10 @@
     glidepoint0: glidepoint@2a {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
+        // sda-pin = <17>;
+        // scl-pin = <20>;
         status = "disabled";
-        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;
+        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
 
         sleep;
         //no-taps;
