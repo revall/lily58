@@ -37,7 +37,7 @@
         precise {
             layers = <LOWER>;
             //inherit;
-            input-processors = <&zip_xy_scaler 1 4>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 4>;
         };
         scroll {
             layers = <RAISE>;
