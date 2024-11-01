@@ -13,35 +13,11 @@
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
         sleep;
         //no-taps;
-        //rotate-90;
+        rotate-90;
         sensitivity = "3x";
         no-smoothing; // badjeff cirque module fork tweak branch
     };
 };
-
-// Split Peripheral Input Relay
-/// {
-//	/* assign `input-listener` to all pointing devices */
-//	/* &glidepoint0 on central, &glidepoint1 on peripheral */
-//
-//    tpad_central_listener {
-//        compatible = "zmk,input-listener";
-//        device = <&glidepoint0>;
-//        //xy-swap;
-//        y-invert;
-//        //x-invert;
-//        scale-multiplier = <2>;        
-//	};
-//
-//    tpad_peripheral_listener {
-//        compatible = "zmk,input-listener";
-//        device = <&glidepoint1>;
-//        //xy-swap;
-//        y-invert;
-//        //x-invert;
-//        scale-multiplier = <2>;       
-//    };
-//};
 
 // ZMK Input Split
 / {
