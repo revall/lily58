@@ -21,11 +21,19 @@
 #define LOWER 1
 #define RAISE 2
 
+&msc {
+    time-to-max-speed-ms = <0>;  // Default 300
+    // acceleration exponent 0: uniform speed
+    // acceleration exponent 1: uniform acceleration
+    // acceleration exponent 2: uniform jerk
+    acceleration-exponent = <0>;   // Default 1
+};
+
 / {
     glidepoint_input_listener {
      compatible = "zmk,input-listener";
      device = <&glidepoint0>;
-        input-processors = &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 3 2>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 3 2>;
         precise {
             layers = <LOWER>;
             //inherit;
