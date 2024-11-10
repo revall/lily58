@@ -26,7 +26,7 @@
     // acceleration exponent 0: uniform speed
     // acceleration exponent 1: uniform acceleration
     // acceleration exponent 2: uniform jerk
-    acceleration-exponent = <1>;   // Default 1
+    acceleration-exponent = <0>;   // Default 1
 };
 
 / {
