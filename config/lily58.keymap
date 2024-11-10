@@ -22,7 +22,7 @@
 #define RAISE 2
 
 &msc {
-    time-to-max-speed-ms = <1000>;  // Default 300
+    time-to-max-speed-ms = <3000>;  // Default 300
     // acceleration exponent 0: uniform speed
     // acceleration exponent 1: uniform acceleration
     // acceleration exponent 2: uniform jerk
