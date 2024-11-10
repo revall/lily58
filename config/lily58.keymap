@@ -22,11 +22,11 @@
 #define RAISE 2
 
 &msc {
-    time-to-max-speed-ms = <0>;  // Default 300
+    time-to-max-speed-ms = <100>;  // Default 300
     // acceleration exponent 0: uniform speed
     // acceleration exponent 1: uniform acceleration
     // acceleration exponent 2: uniform jerk
-    acceleration-exponent = <0>;   // Default 1
+    acceleration-exponent = <1>;   // Default 1
 };
 
 / {
@@ -41,7 +41,7 @@
         };
         scroll {
             layers = <RAISE>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 10>, 
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 8>, 
                                <&zip_xy_to_scroll_mapper>;
         };
     };
