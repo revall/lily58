@@ -11,9 +11,9 @@
         reg = <0x2a>;
         status = "disabled";
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
-        // sleep;
+        sleep;
         //no-taps;
-        invert-x;
+        // invert-x;
         rotate-90;
         sensitivity = "3x";
         // no-smoothing; // badjeff cirque module fork tweak branch
