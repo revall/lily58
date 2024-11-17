@@ -23,14 +23,14 @@
 };
 
 // Cirque Trackpad
-//&i2c0 {
-//    status = "okay";   
-//    glidepoint0: glidepoint@2a {
-//        status = "okay";
-//    };
-//};
-//
-//// ZMK Input Split
-//&glidepoint_split {
-//    device = <&glidepoint0>;
-//};
+&i2c0 {
+    status = "okay";   
+    glidepoint0: glidepoint@2a {
+        status = "okay";
+    };
+};
+
+// ZMK Input Split
+&glidepoint_split {
+    device = <&glidepoint0>;
+};
