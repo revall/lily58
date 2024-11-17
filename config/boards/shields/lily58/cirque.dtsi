@@ -13,6 +13,7 @@
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
         // sleep;
         //no-taps;
+        invert-x;
         rotate-90;
         sensitivity = "3x";
         // no-smoothing; // badjeff cirque module fork tweak branch
