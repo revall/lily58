@@ -5,7 +5,6 @@
  */
 
 #include "lily58.dtsi"
-#include "cirque.dtsi"
 
 
 &kscan0 {
@@ -17,14 +16,6 @@
         , <&pro_micro 16 GPIO_ACTIVE_HIGH>
         , <&pro_micro 10 GPIO_ACTIVE_HIGH>
         ;
-};
-
-// Cirque Trackpad ZMK Input Split
-/ {
-    glidepoint_input_listener: glidepoint_input {
-        //compatible = "zmk,input-listener";    // Don't need this if there's one in .keymap
-        device = <&glidepoint_split>;
-    };
 };
 
 &pro_micro_i2c {

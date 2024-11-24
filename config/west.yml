@@ -7,18 +7,18 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
   projects:
-    #- name: zmk
-    #  remote: zmkfirmware
-    #  revision: main
-    #  import: app/west.yml
     - name: zmk
-      remote: badjeff
-      revision: feat/pointers-with-input-processors
-      import: app/west.yml
+     remote: zmkfirmware
+     revision: main
+     import: app/west.yml
+    # - name: zmk
+    #   remote: badjeff
+    #   revision: feat/pointers-with-input-processors
+    #   import: app/west.yml
     ## Modules ##
-    - name: cirque-input-module
-      remote: badjeff
-      revision: tweak
+    # - name: cirque-input-module
+    #   remote: badjeff
+    #   revision: tweak
   self:
     path: config
     
