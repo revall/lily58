@@ -5,7 +5,7 @@
  */
 
 #include "lily58.dtsi"
-#include "cirque.dtsi"
+
 
 &default_transform {
     col-offset = <6>;
@@ -24,13 +24,41 @@
 
 // Cirque Trackpad
 &i2c0 {
-    status = "okay";   
-    glidepoint0: glidepoint@2a {
+    status = "okay";
+
+    tps43: iqs5xx@74 {
         status = "okay";
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+
+        /*
+         * Potentially non-exhaustive list of configuration options.
+         * See: dts/bindings/input/azoteq,iqs5xx-common.yaml for a full list.
+         */
+        one-finger-tap;
+        press-and-hold;
+        press-and-hold-time = <250>;
+        two-finger-tap;
+
+        scroll;
+        natural-scroll-y;
+        natural-scroll-x;
+
+        bottom-beta = <5>;
+        stationary-threshold = <5>;
+
+        switch-xy;
+
+        reset-gpios = <&pro_micro 20 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
     };
 };
 
 // ZMK Input Split
+/*
 &glidepoint_split {
-    device = <&glidepoint0>;
+    device = <&tps43>;
 };
+
+*/
+

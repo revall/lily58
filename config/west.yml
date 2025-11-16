@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: AYM1607
+      url-base: https://github.com/AYM1607
   projects:
     #- name: zmk
     #  remote: zmkfirmware
@@ -16,9 +18,9 @@ manifest:
       revision: feat/pointers-with-input-processors
       import: app/west.yml
     ## Modules ##
-    - name: cirque-input-module
-      remote: badjeff
-      revision: tweak
+    - name: zmk-driver-azoteq-iqs5xx
+      remote: AYM1607
+      revision: main
   self:
     path: config
     
