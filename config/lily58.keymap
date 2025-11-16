@@ -30,10 +30,6 @@
 };
 
 / {
-    glidepoint_input_listener {
-     compatible = "zmk,input-listener";
-     device = <&glidepoint_split>;
-    };
     keymap {
         compatible = "zmk,keymap";
 

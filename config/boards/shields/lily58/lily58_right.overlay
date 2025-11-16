@@ -55,10 +55,9 @@
 };
 
 // ZMK Input Split
-/*
+
 &glidepoint_split {
     device = <&tps43>;
 };
 
-*/
 
