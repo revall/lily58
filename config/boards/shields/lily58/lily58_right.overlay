@@ -22,7 +22,7 @@
         ;
 };
 
-// Cirque Trackpad
+// Trackpad
 &i2c0 {
     status = "okay";
 

@@ -5,7 +5,6 @@
  */
 
 #include "lily58.dtsi"
-#include "cirque.dtsi"
 
 
 &kscan0 {
@@ -19,7 +18,7 @@
         ;
 };
 
-// Cirque Trackpad ZMK Input Split
+// Trackpad ZMK Input Split
 / {
     glidepoint_input_listener: glidepoint_input {
         //compatible = "zmk,input-listener";    // Don't need this if there's one in .keymap
