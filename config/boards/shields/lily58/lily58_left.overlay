@@ -19,17 +19,7 @@
 };
 
 // Trackpad ZMK Input Split
-/ {
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
 
-        tps43_split: tps43_split@74 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-        };
-    };
-};
 
 &pro_micro_i2c {
     // status = "disabled";
