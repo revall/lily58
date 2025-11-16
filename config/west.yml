@@ -10,9 +10,9 @@ manifest:
       url-base: https://github.com/AYM1607
   projects:
     - name: zmk
-     remote: zmkfirmware
-     revision: main
-     import: app/west.yml
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
     # - name: zmk
     #   remote: badjeff
     #   revision: feat/pointers-with-input-processors
