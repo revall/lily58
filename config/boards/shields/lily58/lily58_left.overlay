@@ -20,9 +20,14 @@
 
 // Trackpad ZMK Input Split
 / {
-    glidepoint_input_listener: glidepoint_input {
-        //compatible = "zmk,input-listener";    // Don't need this if there's one in .keymap
-        device = <&glidepoint_split>;
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        tps43_split: tps43_split@74 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
     };
 };
 
