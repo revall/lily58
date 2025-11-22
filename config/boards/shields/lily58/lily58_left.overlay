@@ -22,8 +22,8 @@
 
 
 &pro_micro_i2c {
-    // status = "disabled";
-    status = "okay";
+    status = "disabled";
+    // status = "okay";
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
@@ -45,7 +45,7 @@
 
 / {
     split_inputs: tps43_input {
-        compatible = "zmk,input-listener";    // Don't need this if there's one in .keymap
+        compatible = "zmk,input-listener";
         device = <&tps43_split>;
     };
 };
