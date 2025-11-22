@@ -58,7 +58,3 @@
 &tps43_split {
     device = <&tps43>;
 };
-
-zephyr_udc0: &usbd {
-    status = "okay";
-};
