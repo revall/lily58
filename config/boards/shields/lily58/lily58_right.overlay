@@ -42,8 +42,8 @@
 
         scroll;
   
-        bottom-beta = <5>;
-        stationary-threshold = <5>;
+        bottom-beta = <40>;
+        stationary-threshold = <10>;
 
         switch-xy;
         flip-x;
